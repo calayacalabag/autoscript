@@ -11,7 +11,7 @@ apt update && apt upgrade -y && update-grub && sleep 2 && reboot
 ```
 
 ## INSTALL SCRIPT 
-Masukkan perintah dibawah untuk menginstall Autoscript Premium by Gemilangkinasih࿐
+Masukkan perintah dibawah untuk menginstall Autoscript Premium by C@L@Y@
 ```
 apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/calayacalabag/autoscript/main/ubu20-deb10-stable.sh && chmod +x ubu20-deb10-stable.sh && ./ubu20-deb10-stable.sh
 ```
@@ -61,4 +61,4 @@ wget -q https://raw.githubusercontent.com/calayacalabag/autoscript/main/update.s
 ```
 
 ## `! WARNING !`
-Script masih dalam tahap pengembangan, Jika menemukan bug bisa lapor ke - Admin Gemilangkinasih࿐
+Kodenya Jangan Dicolong Ya!, Nanti Kena DDOS Nanges
