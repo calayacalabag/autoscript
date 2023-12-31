@@ -240,14 +240,11 @@ function base_package() {
 clear
 # Fungsi input domain
 function pasang_domain() {
-echo -e ""
 clear
 echo -e " Please Enter Your Subdomain $NC"
-echo -e " \033[1;96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 read -p " Masukan Domain : " host1
 echo -e ""
-echo -e " \033[1;96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo "IP=" >> /var/lib/kyt/ipvps.conf
 echo $host1 > /etc/xray/domain
 echo $host1 > /root/domain
