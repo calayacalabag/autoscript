@@ -240,25 +240,17 @@ function base_package() {
 clear
 # Fungsi input domain
 function pasang_domain() {
-clear
-echo -e " Please Enter Your Subdomain $NC"
+echo -e " \e[1;32mPlease Enter Your Subdomain $NC"
+echo -e " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e ""
 read -p " Masukan Domain : " host1
 echo -e ""
+echo -e " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "IP=" >> /var/lib/kyt/ipvps.conf
 echo $host1 > /etc/xray/domain
 echo $host1 > /root/domain
 echo ""
-#install cf
-wget ${REPO}files/cf.sh && chmod +x cf.sh && ./cf.sh
-rm -f /root/cf.sh
-clear
-else
-print_install "Random Subdomain/Domain is Used"
-clear
-    fi
 }
-
 clear
 #GANTI PASSWORD DEFAULT
 restart_system(){
