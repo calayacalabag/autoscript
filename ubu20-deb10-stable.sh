@@ -34,9 +34,8 @@ clear;clear;clear
 # // Banner
 echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "  Developer » C@L@Y@${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
-echo -e "  » This Will Quick Setup VPN Server On Your Server"
 echo -e "  Pembuat : ${green}C@L@Y@® ${NC}"
-echo -e "  Recode By My Self C@L@Y@${YELLOW}(${NC} 2024 ${YELLOW})${NC}"
+echo -e "  Recode By C@L@Y@${YELLOW}(${NC} 2024 ${YELLOW})${NC}"
 echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 sleep 2
@@ -44,9 +43,9 @@ sleep 2
 
 # // Checking Os Architecture
 if [[ $( uname -m | awk '{print $1}' ) == "x86_64" ]]; then
-    echo -e "${OK} Your Architecture Is Supported ( ${green}$( uname -m )${NC} )"
+    echo -e "${OK} Masuk Mas ( ${green}$( uname -m )${NC} )"
 else
-    echo -e "${EROR} Your Architecture Is Not Supported ( ${YELLOW}$( uname -m )${NC} )"
+    echo -e "${EROR} Gak Masuk Mas ( ${YELLOW}$( uname -m )${NC} )"
     exit 1
 fi
 
@@ -210,7 +209,7 @@ function nginx_install() {
 function base_package() {
     clear
     ########
-    print_install "Menginstall Packet Yang Dibutuhkan"
+    print_install "Rokokan Disek Mbah"
     apt install zip pwgen openssl netcat socat cron bash-completion -y
     apt install figlet -y
     apt update -y
