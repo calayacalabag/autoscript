@@ -238,6 +238,7 @@ function base_package() {
     
 }
 clear
+
 # Fungsi input domain
 function pasang_domain() {
 echo -e " \e[1;32mPlease Enter Your Subdomain $NC"
@@ -252,6 +253,7 @@ echo $host1 > /root/domain
 echo ""
 }
 clear
+
 #GANTI PASSWORD DEFAULT
 restart_system(){
 #IZIN SCRIPT
