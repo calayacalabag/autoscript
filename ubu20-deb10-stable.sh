@@ -242,16 +242,7 @@ clear
 function pasang_domain() {
 echo -e ""
 clear
-echo -e " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e " \e[1;32mPlease Select a Domain Type Below \e[0m"
-echo -e " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e " \e[1;32m1)\e[0m Menggunakan Domain Sendiri (Recommended)"
-echo -e " \e[1;32m2)\e[0m Menggunakan Domain Random"
-echo -e " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-read -p " Please select numbers 1-2 or Any Button(Random) : " host
-echo ""
-if [[ $host == "1" ]]; then
-echo -e " \e[1;32mPlease Enter Your Subdomain $NC"
+echo -e " Please Enter Your Subdomain $NC"
 echo -e " \033[1;96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 read -p " Masukan Domain : " host1
@@ -261,7 +252,7 @@ echo "IP=" >> /var/lib/kyt/ipvps.conf
 echo $host1 > /etc/xray/domain
 echo $host1 > /root/domain
 echo ""
-elif [[ $host == "2" ]]; then
+then
 #install cf
 wget ${REPO}files/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
