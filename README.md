@@ -1,19 +1,7 @@
-## UPGRADE FOR DEBIAN
-Masukkan perintah dibawah jika anda menggunakan OS Debian Version 9 atau 10
-```
-apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot
-```
-
-##  UPGRADE FOR UBUNTU
-Masukkan perintah dibawah jika anda menggunakan OS Ubuntu Version 18 atau 20
-```
-apt update && apt upgrade -y && update-grub && sleep 2 && reboot
-```
-
 ## INSTALL SCRIPT 
-Masukkan perintah dibawah untuk menginstall Autoscript Premium by C@L@Y@
+Masukkan perintah dibawah untuk menginstall Autoscript
 ```
-apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/calayacalabag/autoscript/main/ubu20-deb10-stable.sh && chmod +x ubu20-deb10-stable.sh && ./ubu20-deb10-stable.sh
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl &&  wget -q https://raw.githubusercontent.com/calayacalabag/autoscript/main/ubu20-deb10-stable.sh && chmod +x ubu20-deb10-stable.sh && ./ubu20-deb10-stable.sh
 ```
 
 ## UPDATE SCRIPT
@@ -23,7 +11,7 @@ wget -q https://raw.githubusercontent.com/calayacalabag/autoscript/main/update.s
 ```
 
 ## TESTED ON OS
-- UBUNTU Version 18 Atau 20 (Recommended)
+- UBUNTU Version 18 Atau 20
 - DEBIAN Version 09 Atau 10
 
 ## FITUR TAMBAHAN
@@ -59,6 +47,3 @@ wget -q https://raw.githubusercontent.com/calayacalabag/autoscript/main/update.s
 - Always Use HTTPS : OFF
 - UNDER ATTACK MODE : OFF
 ```
-
-## `! WARNING !`
-Kodenya Jangan Dicolong Ya!, Nanti Kena DDOS Nanges
